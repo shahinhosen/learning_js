@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+   
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.pop();
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.push("Kiwi");
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.shift();
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+
+
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+
+
+
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
+
+
+const arr1 = ["Emil", "Tobias", "Linus"];
+const myChildren = arr1.concat("Peter"); 
+
+
+
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 2, "Lemon", "Kiwi");
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+
+
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+fruits.reverse();
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+
+
+function(a, b){return a - b}
+
+
+
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(){return 0.5 - Math.random()});
+
+
+
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+
+for (let i = points.length -1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (i+1));
+  let k = points[i];
+  points[i] = points[j];
+  points[j] = k;
+
+
+
+
+
+
+
+  const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+// now points[0] contains the lowest value
+// and points[points.length-1] contains the highest value
+
+
+
+
+
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+  }
+
+  function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+  }
+
+
+
+
+  function myArrayMax(arr) {
+    let len = arr.length;
+    let max = -Infinity;
+    while (len--) {
+      if (arr[len] > max) {
+        max = arr[len];
+      }
+    }
+    return max;
+  }
+
+
+  function myArrayMin(arr) {
+    let len = arr.length;
+    let min = Infinity;
+    while (len--) {
+      if (arr[len] < min) {
+        min = arr[len];
+      }
+    }
+    return min;
+  }
+
+
+
+  const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+
+cars.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+
+
+
+
+
+  const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+
+
+
+
+
+
+  const numbers = [45, 4, 9, 16, 25];
+  let txt = "";
+  numbers.forEach(myFunction);
+  
+  function myFunction(value) {
+    txt += value + "<br>";
+  }
+
+
+
+
+  const numbers1 = [45, 4, 9, 16, 25];
+  const numbers2 = numbers1.map(myFunction);
+  
+  function myFunction(value, index, array) {
+    return value * 2;
+  }
+
+
+
+  const myArr = [1, 2, 3, 4, 5, 6];
+const newArr = myArr.flatMap((x) => x * 2);
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+function myFunction(value) {
+  return value > 18;
+}
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value) {
+  return total + value;
+}
+
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction, 100);
+
+function myFunction(total, value) {
+  return total + value;
+}
+
+
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduceRight(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduceRight(myFunction);
+
+function myFunction(total, value) {
+  return total + value;
+}
+
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+function myFunction(value) {
+  return value > 18;
+}
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple") + 1;
+
+
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.lastIndexOf("Apple") + 1;
+
+
+
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.findIndex(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+
+for (let x of keys) {
+  text += x + "<br>";
+}
+
+
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("demo").innerHTML += x;
+}
+
+
+
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+
+
+
+const cars = ["Volvo", "BMW"];   // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+var cars = ["Volvo", "BMW"];     // Not allowed
+cars = ["Volvo", "BMW"];         // Not allowed
+
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+  var cars = ["Volvo", "BMW"];   // Not allowed
+  cars = ["Volvo", "BMW"];       // Not allowed
+}
+
+
+
+var cars = ["Volvo", "BMW"];     // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+{
+  var cars = ["Volvo", "BMW"];   // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+}
+
+
+
+
+
+var cars = ["Volvo", "BMW"];   // Allowed
+var cars = ["Toyota", "BMW"];  // Allowed
+cars = ["Volvo", "Saab"];      // Allowed
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

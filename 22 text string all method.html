@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let test = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        let b = test.length;
+
+        
+
+        let c= "cricket, footboll, hadodo "
+        let play= c.slice()
+
+
+        let d= "pleace is beautifyl"
+        let place=d.replace('beauty')
+
+        let e= 'my name is shahin'
+        let f=e.replaceAll(/cats/,"rakib")
+
+        let g= 'my name is shahin'
+        let f= g.toUpperCase()
+
+        let text1 = "      Hello World!      ";
+        let text2 = text1.trim();
+
+
+        let text = "5";
+        let padded = text.padStart(4,"0");
+
+        let text = "HELLO WORLD";
+        let char = text.charAt(0);
+
+
+        let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("John");
+
+
+
+let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("locate", 15);
+
+
+
+let text = "Please locate where 'locate' occurs!";
+text.search("locate");
+
+
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match("ain");
+
+
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match("ain");
+
+
+
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/g);
+
+
+
+const iterator = text.matchAll("Cats");
+
+const iterator = text.matchAll(/Cats/g);
+
+
+const iterator = text.matchAll(/Cats/gi);
+
+
+
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+
+
+
+
+let text = "Hello world, welcome to the universe.";
+text.includes("world", 12);
+
+
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+
+
+
+let text = "Hello world, welcome to the universe.";
+text.startsWith("world", 6)
+
+
+let text = "Hello world, welcome to the universe.";
+text.endsWith("world", 11);
+
+
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+
+
+
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+    </script>
+    
+    
+</body>
+</html>
